@@ -7,7 +7,7 @@
 
   <!-- Open Graph / WhatsApp Link Preview Metadata -->
   <meta property="og:title" content="Friday 18:00 SAST Countdown" />
-  <meta property="og:description" content="Live South African Standard Time (UTC+2) countdown to Friday knock-off & weekend mode." />
+  <meta property="og:description" content="Live South African Standard Time (UTC+2) countdown to 2 Weeks Off!" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Friday 18:00 SAST Countdown" />
@@ -609,7 +609,7 @@
         const nowUtcMs = Date.now();
         const targetUtcMs = getActiveTargetUtcMs(nowUtcMs);
         const targetFormatted = formatSastDateTime(targetUtcMs, false);
-        const eventTitle = mode === 'custom' ? (customTitle || 'Custom SAST Countdown') : 'Friday 18:00 SAST Knock-Off';
+        const eventTitle = mode === 'custom' ? (customTitle || 'Custom SAST Countdown') : '2 Weeks Off!';
 
         const diffMs = Math.max(0, targetUtcMs - nowUtcMs);
         let remainingSnippet = '';
@@ -701,10 +701,10 @@
 
           if (mode === 'fixed') {
             modeBadgeTextEl.textContent = 'Locked Target • Fri, 27 Nov 2026';
-            eventHeadingEl.textContent = 'Friday 18:00 SAST Knock-Off';
+            eventHeadingEl.textContent = '2 Weeks Off!';
           } else if (mode === 'weekly') {
             modeBadgeTextEl.textContent = 'Auto-Rollover • Every Friday 18:00 SAST';
-            eventHeadingEl.textContent = 'Friday 18:00 SAST Knock-Off';
+            eventHeadingEl.textContent = '2 Weeks Off!';
           } else {
             modeBadgeTextEl.textContent = 'Custom Target • SAST (UTC+2)';
             eventHeadingEl.textContent = customTitle || 'Custom SAST Countdown';
